@@ -1,38 +1,66 @@
-.App {
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+  padding-left: 10%;
+}
+
+h1 {
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: black;
+  align-self: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  background-color: black;
+  width: 300px;
+  height: 200px;
+  color: white;
+  border: 1px solid white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.heart {
+  background-color: black;
+  position: relative;
+  left: 45%;
+  top: 10px;
+  cursor: pointer;
+}
+
+.like {
+  color: red;
+}
+
+.dislike {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  outline: none;
+  background-position: center;
+  background-size: 100%;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.open-fav {
+  border-radius: 50%;
+  background-image: url(https://png.pngtree.com/png-vector/20190501/ourlarge/pngtree-favourite-icon-design-png-image_1016157.jpg);
+  position: fixed;
+  bottom: 6%;
+  right: 6%;
+}
+
+.go-back {
+  background-image: url(https://image.flaticon.com/icons/png/512/17/17882.png);
+  position: fixed;
+  left: 0px;
+  top: 10px;
 }
